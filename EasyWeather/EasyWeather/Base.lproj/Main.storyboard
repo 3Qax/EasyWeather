@@ -684,15 +684,25 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="EasyWeather" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EWViewController" id="XfG-lQ-9wD" customClass="EWViewController" customModule="EasyWeather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="662"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="afN-xp-fPN">
+                                <rect key="frame" x="20" y="20" width="440" height="622"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" identifier="NSImage" imageScaling="proportionallyDown" id="Cho-KB-EMe"/>
+                                <connections>
+                                    <action selector="getIMage:" target="XfG-lQ-9wD" id="CBq-FL-PGg"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="75" y="851"/>
         </scene>
     </scenes>
 </document>
